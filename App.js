@@ -1,3 +1,5 @@
+import {NavigationContainer} from '@react-navigation/native';
+
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import StackNavigator from './src/navigation/StackNavigator';
@@ -5,7 +7,9 @@ import StackNavigator from './src/navigation/StackNavigator';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StackNavigator />
+      <NavigationContainer>
+        <StackNavigator />
+      </NavigationContainer>
     </SafeAreaView>
   );
 };

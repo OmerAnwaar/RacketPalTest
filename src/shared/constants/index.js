@@ -3,7 +3,7 @@ import {
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
 
-const iconPath = '../../../assets';
+const iconPath = '../../assets/Icons';
 const extension = '.png';
 
 export const icons = {
@@ -20,6 +20,7 @@ export const colors = {
   SILVER: '#C8C7C7',
   DOVE_GRAY: '#696969',
   NOBEL: '#B4B4B4',
+  BLUE: '#2196f3',
   TRANSPERANT: 'rgba(0,0,0,0.5)',
 };
 
@@ -36,5 +37,4 @@ export const theme = {
     alignContent: 'center',
     alignItems: 'center',
   },
-  TOUCH_OPACITY: 0.8,
 };

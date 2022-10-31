@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RpRateusCard Component renders RpRateusCard Component correctly 1`] = `
+<View>
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "borderRadius": 12,
+        "height": 439,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-evenly",
+          "paddingHorizontal": "5%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignSelf": "flex-end",
+            "marginEnd": 30,
+          }
+        }
+      >
+        <Image
+          source={
+            {
+              "testUri": "../../../src/assets/Icons/ic_close.png",
+            }
+          }
+          style={
+            {
+              "height": 40,
+              "width": 37.5,
+            }
+          }
+        />
+      </View>
+      <Image
+        resizeMode="contain"
+        source={
+          {
+            "testUri": "../../../src/assets/Icons/ic_rating_stars.png",
+          }
+        }
+        style={
+          {
+            "height": 80,
+            "width": "100%",
+          }
+        }
+      />
+      <Text
+        style={
+          {
+            "fontSize": 16,
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Enjoying RacketPal?
+      </Text>
+      <Text
+        style={
+          {
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 16.8,
+            "paddingHorizontal": 40,
+            "textAlign": "center",
+          }
+        }
+      >
+        Your App Store review greatly helps spread the word and grow the racket sports community!
+      </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "backgroundColor": "#2196f3",
+            "borderRadius": 6,
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingVertical": "5%",
+            "width": "80%",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "white",
+            }
+          }
+        >
+          Rate us
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Text
+          style={
+            {
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 20,
+              "paddingHorizontal": 40,
+              "textAlign": "center",
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          Not yet? Give us feedback
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

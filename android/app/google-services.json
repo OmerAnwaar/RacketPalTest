@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "344197706210",
+    "project_id": "racketpaltest",
+    "storage_bucket": "racketpaltest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344197706210:android:526880573efaff0e0309bb",
+        "android_client_info": {
+          "package_name": "com.racketpal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344197706210-aohes3cc2p60e1v779pp2dpc73sagrge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBstQoSb1__qsKHIuOnkZ8Hdb3Dq-hp_OU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344197706210-aohes3cc2p60e1v779pp2dpc73sagrge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

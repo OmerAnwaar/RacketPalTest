@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Screen renders Home screen correctly 1`] = `
+<View
+  style={
+    {
+      "alignContent": "center",
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "#2196f3",
+        "borderRadius": 10,
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 15,
+      }
+    }
+    testID="rating"
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Give a Feedback
+    </Text>
+  </View>
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  />
+</View>
+`;

@@ -1,12 +1,9 @@
-import 'react-native';
 import React from 'react';
-import App from '../App';
 import renderer from 'react-test-renderer';
+import HomeScreen from '../HomeScreen';
 
 const mockedFirebaseAnalyticsLogEvent = jest.fn();
 const mockedFirebaseAnalyticsLogSelectContent = jest.fn();
-
-jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
 jest.mock('@react-native-firebase/analytics', () => () => {
   return {
@@ -14,6 +11,7 @@ jest.mock('@react-native-firebase/analytics', () => () => {
     logSelectContent: mockedFirebaseAnalyticsLogSelectContent,
   };
 });
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
 const mockedNavigate = jest.fn();
 
@@ -27,9 +25,15 @@ jest.mock('@react-navigation/native', () => {
   };
 });
 
-describe('App', () => {
-  it('renders App correctly', () => {
-    const snapshot = renderer.create(<App />).toJSON();
+describe('Test Screen', () => {
+  it('renders Home screen correctly', () => {
+    const snapshot = renderer.create(<HomeScreen />).toJSON();
     expect(snapshot).toMatchSnapshot();
   });
+
+  // it('onToggle coverage', () => {
+  //   // render the component on virtual dom
+  //   let tree = renderer.create(<HomeScreen />).toJSON();
+  //   expect(global.utils.findById(tree, 'rating')).toBeDefined();
+  // });
 });
