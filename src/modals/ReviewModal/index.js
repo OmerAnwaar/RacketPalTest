@@ -5,8 +5,9 @@ import RpRatingCard from '../../components/Card/RpRatingCard';
 import React, {useState} from 'react';
 import {Keyboard, Linking, Modal, Platform, Pressable} from 'react-native';
 
-import styles from './styles';
+import {fetchConfig, getRemoteValue} from '../../services/firebase';
 import {logAnalytic} from '../../shared/utils';
+import styles from './styles';
 
 const appleStore = 'itms-apps://itunes.apple.com/us/app/id1453817491?mt=8';
 const googlePlayStore = 'market://details?id=com.racketpal';
@@ -14,12 +15,14 @@ const googlePlayStore = 'market://details?id=com.racketpal';
 const ReviewModal = ({visible, toggleModal}) => {
   const navigation = useNavigation();
 
-  const [preRating, setPreRating] = useState(false);
   const [rating, setRating] = useState(0);
+
+  fetchConfig().catch(console.log);
+
+  const experiment = getRemoteValue('varient_2');
 
   function handleCancel() {
     logAnalytic('submit', '123');
-    setPreRating(false);
     toggleModal();
     setRating(0);
   }
@@ -38,8 +41,8 @@ const ReviewModal = ({visible, toggleModal}) => {
   }
 
   function handleRateUs() {
-    logAnalytic('RateUs', '1234');
-    setPreRating(true);
+    handleCancel();
+    Linking.openURL(Platform.OS === 'ios' ? appleStore : googlePlayStore);
   }
 
   function handleFeedback() {
@@ -51,7 +54,7 @@ const ReviewModal = ({visible, toggleModal}) => {
   return (
     <Modal visible={visible} transparent animationType={'slide'}>
       <Pressable style={styles.container}>
-        {!preRating ? (
+        {experiment ? (
           <RpRateUsCard
             testId={'feedback'}
             onRateUs={handleRateUs}

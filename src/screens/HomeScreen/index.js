@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import ReviewModal from '../../modals/ReviewModal';
 import {Text, TouchableOpacity, View} from 'react-native';
-import styles from './styles';
 import {logAnalytic} from 'shared/utils';
+import ReviewModal from '../../modals/ReviewModal';
+import styles from './styles';
 
 const HomeScreen = () => {
   const [modal, setModal] = useState(false);
